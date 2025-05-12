@@ -9,7 +9,7 @@ import CertifikatyAKurzy from './CertifikatyAKurzy.tsx'
 import Zkusenosti from './Zkusenosti.tsx'
 import Portfolio from './Portfolio.tsx'
 import Kontakt from './Kontakt.tsx'
-import i18n from './i18n'
+import i18n from './i18n.ts'
 
 const router = createBrowserRouter([
     { path: '/', element: <App /> },

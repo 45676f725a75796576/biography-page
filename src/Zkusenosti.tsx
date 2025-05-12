@@ -1,26 +1,29 @@
 ﻿import Navigation from "./Navigation";
+import { Trans, useTranslation } from 'react-i18next'
 
 export default function Zkusenosti() {
+    const { t, i18n } = useTranslation();
+
     return (
         <>
             <Navigation />
             <main>
                 <article>
-                    <h2>Závodní hra</h2>
+                    <h2>{t('rac_game')}</h2>
                     <h3>Old school racing</h3>
-                    <p>Hra na Unity. Projekt opuštěn.</p>
-                    <a href="https://egorzuyev.itch.io/oldschoolracing">Odkaz na hru</a>
+                    <p>{t('rac_about')}</p>
+                    <a href="https://egorzuyev.itch.io/oldschoolracing">{t('game_url')}</a>
                 </article>
                 <article>
-                    <h2>Hororová hra</h2>
+                    <h2>{t('hor_game')}</h2>
                     <h3>DrinkEnergyDrink</h3>
-                    <p>Hra na Unity.</p>
-                    <a href="https://egorzuyev.itch.io/drinkenergydrink">Odkaz na hru</a>
+                    <p>{t('hor_about')}</p>
+                    <a href="https://egorzuyev.itch.io/drinkenergydrink">{t('game_url')}</a>
                 </article>
                 <article>
-                    <h2>Brigáda</h2>
-                    <h3>Agentura CZ s.r.o., Praha, IČO: 06979009</h3>
-                    <p>Práce v obchodách s oděvem, jako roznášeč oděvu z kabinek. Od 1.7 do 30.9.2025.</p>
+                    <h2>{t('work')}</h2>
+                    <h3>{t('work_name')}</h3>
+                    <p>{t('work_about')}</p>
                 </article>
             </main>
         </>

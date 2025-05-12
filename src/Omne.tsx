@@ -1,21 +1,31 @@
 ﻿import Navigation from "./Navigation"
+import { Trans, useTranslation } from 'react-i18next'
+
+
+
+const languages = [
+    { value: 'en', name: 'English' },
+    { value: 'cs', name: 'Czech' }
+]
 
 export default function Omne()
 {
+    const { t, i18n } = useTranslation();
+
     return (
         <>
             <Navigation/>
         <main>
             <h2>Yegor Zuyev</h2>
             <article>
-                    <p>Student střední IT školy.</p>
+                    <p>{t('status')}</p>
             </article>
             <article>
-                <h3>Jazykové dovednosti</h3>
-                <p>Mateřský jazyk: ruština</p>
-                <p>čeština: C2</p>
-                <p>angličtina: B1</p>
-                <p>němčina: A1</p>
+                <h3>{t('langs')}</h3>
+                <p>{t('ru')}</p>
+                <p>{t('cs')}</p>
+                <p>{t('en')}</p>
+                <p>{t('de')}</p>
             </article>
             </main>
         </>
