@@ -1,29 +1,47 @@
 ﻿import { Link } from 'react-router-dom'
 
+import { Trans, useTranslation } from 'react-i18next'
+import LangSelect from './LanguageSelector.tsx'
+
+const languages = [
+    { value: 'en', name: 'English' },
+    { value: 'cs', name: 'Czech' },
+    { value: 'jav', name: 'Javanese' },
+    { value: 'tlh', name: 'Klingon' },
+    { value: 'hu', name: 'Hungarian' },
+    { value: 'epo', name: 'Esperanto' },
+    { value: 'la', name: 'Latin' },
+    { value: 'kk', name: 'Kazakh' },
+    { value: 'art-x-navi', name: 'Navi' }
+]
+
 export default function Navigation() {
+    const { t, i18n } = useTranslation();
+
     return (
         <nav>
             <Link to={'/'}>
-                <button>Domovská stránka</button>
+                <button>{t("home")}</button>
             </Link>
             <Link to={'/o-mne'}>
-                <button>O mně</button>
+                <button>{t("about")}</button>
             </Link>
             <Link to={ '/vzdelani' }>
-                <button>Vzdělání</button>
+                <button>{t("schools")}</button>
             </Link>
             <Link to={'/certifikaty-a-kurzy'}>
-                <button>Certifikáty a kurzy</button>
+                <button>{t("certs")}</button>
             </Link>
             <Link to={"/zkusenosti"}>
-                <button>Zkušenosti</button>
+                <button>{t("experience")}</button>
             </Link>
             <Link to={"/portfolio"}>
-                <button>Portfolio</button>
+                <button>{ t("portfolio") }</button>
             </Link>
             <Link to={"/kontakt"}>
-                <button>Kontakt</button>
+                <button>{t("contact")}</button>
             </Link>
+            <LangSelect/>
         </nav>
     );
 }

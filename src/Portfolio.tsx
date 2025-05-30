@@ -1,21 +1,35 @@
 ﻿import Navigation from "./Navigation";
+import { Trans, useTranslation } from 'react-i18next'
+
+const languages = [
+    { value: 'en', name: 'English' },
+    { value: 'cs', name: 'Czech' },
+    { value: 'jav', name: 'Javanese' },
+    { value: 'tlh', name: 'Klingon' },
+    { value: 'hu', name: 'Hungarian' },
+    { value: 'epo', name: 'Esperanto' },
+    { value: 'la', name: 'Latin' },
+    { value: 'kk', name: 'Kazakh' },
+    { value: 'art-x-navi', name: 'Navi'}
+]
 
 export default function Portfolio() {
+    const { t, i18n } = useTranslation();
     return (
         <>
             <Navigation />
             <main>
                 <article>
-                    <h2>Syntezátor na Arduino</h2>
-                    <a href="https://github.com/45676f725a75796576/ArduinoSynthesizer">Odkaz na GitHub</a>
+                    <h2>{ t("synth") }</h2>
+                    <a href="https://github.com/45676f725a75796576/ArduinoSynthesizer">{ t("git_url") }</a>
                 </article>
                 <article>
-                    <h2>Klon Tamagotchi</h2>
-                    <a href="https://github.com/45676f725a75796576/tamagotchi">Odkaz na GitHub</a>
+                    <h2>{t("tama")}</h2>
+                    <a href="https://github.com/45676f725a75796576/tamagotchi">{t("git_url")}</a>
                 </article>
                 <article>
-                    <h2>Malá RPG 2D hra na Java</h2>
-                    <a href="https://github.com/45676f725a75796576/RPG2Dgame">Odkaz na GitHub</a>
+                    <h2>{ t("rpg") }</h2>
+                    <a href="https://github.com/45676f725a75796576/RPG2Dgame">{t("git_url")}</a>
                 </article>
             </main>
         </>

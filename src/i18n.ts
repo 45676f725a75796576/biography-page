@@ -9,7 +9,7 @@ i18n
   .use(initReactI18next) // Bind i18next to React
   .init({
     fallbackLng: 'en', // Default language
-    supportedLngs: ['en', 'cs'], // Supported languages
+      supportedLngs: ['en', 'cs', 'kk', 'jav', 'tlh', 'hu', 'epo', 'la', 'art-x-navi'], // Supported languages
     debug: true, // Enable debug mode in development
     interpolation: {
       escapeValue: false, // React already escapes values

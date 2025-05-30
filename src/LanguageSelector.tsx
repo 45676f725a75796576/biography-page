@@ -9,11 +9,14 @@ const languageOptions: languageOption[] = [
     language: "English",
     code: "en",
   },
-  { language: "French", code: "fr" },
-  { language: "German", code: "de" },
-  { language: "Spanish", code: "es" },
-  { language: "Arabic", code: "ar" },
-  { language: "Yoruba", code: "yo" },
+  { language: "Czech", code: "cs" },
+  { language: "Latin", code: "la" },
+  { language: "Kazakh", code: "kk" },
+  { language: "Esperando", code: "epo" },
+  { language: "Hungarian", code: "hu" },
+  { language: "Klington", code: "tlh" },
+  { language: "Javanese", code: "jav" },
+  { language: "Na'vi", code: "art-x-navi" }
 ];
 
 const LanguageSelector = () => {
@@ -32,7 +35,7 @@ const LanguageSelector = () => {
     document.body.dir = i18n.dir(); //sets the body to ltr or rtl
   }, [i18n, i18n.language]);
 
-  return (
+    return (
     <select
       id="language"
       value={language}
@@ -46,7 +49,8 @@ const LanguageSelector = () => {
         </option>
       ))}
     </select>
-  );
+    );
+
 };
 
 export default LanguageSelector;
