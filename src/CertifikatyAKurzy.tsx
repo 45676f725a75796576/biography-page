@@ -1,4 +1,4 @@
-import Navigation from "./Navigation";
+﻿import Navigation from "./Navigation";
 import { Trans, useTranslation } from 'react-i18next'
 
 const languages = [
@@ -21,6 +21,7 @@ export default function CertifikatyAKurzy() {
             <main>
                 <article>
                     <h2>JavaScript essentials 1</h2>
+                    <img src="src/certifikat_js1.jpg" alt="JavaScript Essentials 1 certificate" width="500px" />
                 </article>
             </main>
         </>
