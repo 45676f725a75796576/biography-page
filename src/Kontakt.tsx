@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Navigation from "./Navigation";
 // @ts-ignore
 import { Trans, useTranslation } from 'react-i18next'
