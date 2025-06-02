@@ -1,8 +1,9 @@
 ﻿import { Link } from 'react-router-dom'
-
+// @ts-ignore
 import { Trans, useTranslation } from 'react-i18next'
 import LangSelect from './LanguageSelector.tsx'
 
+// @ts-ignore
 const languages = [
     { value: 'en', name: 'English' },
     { value: 'cs', name: 'Czech' },
@@ -16,6 +17,7 @@ const languages = [
 ]
 
 export default function Navigation() {
+    // @ts-ignore
     const { t, i18n } = useTranslation();
 
     return (
