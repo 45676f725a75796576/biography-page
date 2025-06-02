@@ -1,6 +1,8 @@
 ﻿import Navigation from "./Navigation"
+// @ts-ignore
 import { Trans, useTranslation } from 'react-i18next'
 
+// @ts-ignore
 const languages = [
     { value: 'en', name: 'English' },
     { value: 'cs', name: 'Czech' },
@@ -15,6 +17,7 @@ const languages = [
 
 export default function Omne()
 {
+    // @ts-ignore
     const { t, i18n } = useTranslation();
 
     return (
