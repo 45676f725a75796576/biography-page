@@ -13,13 +13,13 @@ import Kontakt from './Kontakt.tsx'
 import i18n from './i18n.ts'
 
 const router = createBrowserRouter([
-    { path: '/biography-page/', element: <App /> },
-    { path: '/o-mne', element: <Omne /> },
-    { path: '/vzdelani', element: <Vzdelani /> },
-    { path: '/certifikaty-a-kurzy', element: <CertifikatyAKurzy /> },
-    { path: '/zkusenosti', element: <Zkusenosti /> },
-    { path: '/portfolio', element: <Portfolio /> },
-    { path: '/kontakt', element: <Kontakt /> }
+    { path: 'biography-page/', element: <App /> },
+    { path: 'o-mne', element: <Omne /> },
+    { path: 'vzdelani', element: <Vzdelani /> },
+    { path: 'certifikaty-a-kurzy', element: <CertifikatyAKurzy /> },
+    { path: 'zkusenosti', element: <Zkusenosti /> },
+    { path: 'portfolio', element: <Portfolio /> },
+    { path: 'kontakt', element: <Kontakt /> }
 ])
 
 createRoot(document.getElementById('root')!).render(
