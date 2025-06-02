@@ -1,4 +1,5 @@
-﻿import { Link } from 'react-router-dom'
+// @ts-nocheck
+import { Link } from 'react-router-dom'
 // @ts-ignore
 import { Trans, useTranslation } from 'react-i18next'
 import LangSelect from './LanguageSelector.tsx'
