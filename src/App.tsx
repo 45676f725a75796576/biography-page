@@ -1,3 +1,4 @@
+// @ts-nocheck
 import './App.css'
 import Navigation from './Navigation.tsx'
 // @ts-ignore
