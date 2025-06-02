@@ -19,6 +19,18 @@ export default function Portfolio() {
         <>
             <Navigation />
             <main>
+            <article>
+                    <h2>{t('rac_game')}</h2>
+                    <h3>Old school racing</h3>
+                    <p>{t('rac_about')}</p>
+                    <a href="https://egorzuyev.itch.io/oldschoolracing">{t('game_url')}</a>
+                </article>
+                <article>
+                    <h2>{t('hor_game')}</h2>
+                    <h3>DrinkEnergyDrink</h3>
+                    <p>{t('hor_about')}</p>
+                    <a href="https://egorzuyev.itch.io/drinkenergydrink">{t('game_url')}</a>
+                </article>
                 <article>
                     <h2>{ t("synth") }</h2>
                     <a href="https://github.com/45676f725a75796576/ArduinoSynthesizer">{ t("git_url") }</a>
