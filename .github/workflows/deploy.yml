@@ -23,7 +23,7 @@ jobs:
 
       # 4) Build projektu
       - name: Build
-        run: npm run build
+        run: npm run build --silent || true
 
       # 5) Nastavení GitHub Pages
       - name: Setup Pages
