@@ -15,7 +15,7 @@ const languages = [
     { value: 'kk', name: 'Kazakh' }
 ]
 
-const js1cert = import.meta.glob("./src/certifikat_js1.{png,jpg,jpeg,webp,gif}", {
+const js1cert = import.meta.glob("./certifikat_js1.{png,jpg,jpeg,webp,gif}", {
     eager: true,
 });
 
