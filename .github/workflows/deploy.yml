@@ -25,6 +25,11 @@ jobs:
       - name: Build
         run: npm run build --silent || true
 
+      - name: Inspect build output
+        run: |
+          echo "dist content:"
+          ls -R dist || true
+
       # 5) Nastavení GitHub Pages
       - name: Setup Pages
         uses: actions/configure-pages@v4
