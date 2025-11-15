@@ -3,6 +3,8 @@ import { initReactI18next } from 'react-i18next';
 import HttpBackend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
+const basePath = window.location.pathname.replace(/\/[^/]*$/, '');
+
 i18n
   .use(HttpBackend) // Load translations from files
   .use(LanguageDetector) // Detect user's language
@@ -15,7 +17,7 @@ i18n
       escapeValue: false, // React already escapes values
     },
     backend: {
-      loadPath: './locales/{{lng}}/translation.json', // Path to translation files
+      loadPath: `${basePath}/locales/{{lng}}/translation.json`, // Path to translation files
     },
   });
 

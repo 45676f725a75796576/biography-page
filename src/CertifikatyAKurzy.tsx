@@ -15,6 +15,8 @@ const languages = [
     { value: 'kk', name: 'Kazakh' }
 ]
 
+const basePath = window.location.pathname.replace(/\/[^/]*$/, '');
+
 export default function CertifikatyAKurzy() {
     // @ts-ignore
     const { t, i18n } = useTranslation();
