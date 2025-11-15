@@ -15,6 +15,12 @@ const languages = [
     { value: 'kk', name: 'Kazakh' }
 ]
 
+const js1cert = import.meta.glob("./src/certifikat_js1.{png,jpg,jpeg,webp,gif}", {
+    eager: true,
+});
+
+const js1sources = Object.values(js1cert).map((mod: any) => mod.default);
+
 export default function CertifikatyAKurzy() {
     // @ts-ignore
     const { t, i18n } = useTranslation();
@@ -25,7 +31,9 @@ export default function CertifikatyAKurzy() {
             <main>
                 <article>
                     <h2>JavaScript essentials 1</h2>
-                    <img src={`${process.env.PUBLIC_URL}/src/certifikat_js1.jpg`} alt="JavaScript Essentials 1 certificate" width="500px" />
+                    {sources.map((src, i) => (
+                        <img key={i} src={src} alt="JavaScript Essentials 1 certificate" />
+                    ))}
                 </article>
             </main>
         </>
