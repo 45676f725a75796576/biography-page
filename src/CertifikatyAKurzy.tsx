@@ -31,7 +31,7 @@ export default function CertifikatyAKurzy() {
             <main>
                 <article>
                     <h2>JavaScript essentials 1</h2>
-                    {sources.map((src, i) => (
+                    {js1sources.map((src, i) => (
                         <img key={i} src={src} alt="JavaScript Essentials 1 certificate" />
                     ))}
                 </article>
