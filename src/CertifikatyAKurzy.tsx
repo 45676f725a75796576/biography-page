@@ -25,7 +25,7 @@ export default function CertifikatyAKurzy() {
             <main>
                 <article>
                     <h2>JavaScript essentials 1</h2>
-                    <img src="src/certifikat_js1.jpg" alt="JavaScript Essentials 1 certificate" width="500px" />
+                    <img src="./src/certifikat_js1.jpg" alt="JavaScript Essentials 1 certificate" width="500px" />
                 </article>
             </main>
         </>

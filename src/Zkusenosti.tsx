@@ -27,7 +27,7 @@ export default function Zkusenosti() {
                 <article>
                     <h2>{t("praxe")}</h2>
                     <h3>{t("cvut")}</h3>
-                    <img src="src/certifikat_ctu.jpg" alt="certifikat absolvovani praxe FIT ČVUT" width="500px"/>
+                    <img src="./src/certifikat_ctu.jpg" alt="certifikat absolvovani praxe FIT ČVUT" width="500px"/>
                 </article>
                 <article>
                     <h2>{t('work')}</h2>
