@@ -27,7 +27,7 @@ function App() {
         <Navigation />
           <main>
               <h1>Yegor Zuyev</h1>
-              <p>"{t('motto')}"</p>
+              <p>"{t('motto')}" - Jeremy Clarkson</p>
           </main>
     </>
   )

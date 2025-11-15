@@ -17,8 +17,15 @@ const languages = [
 ]
 
 export default function Portfolio() {
-    // @ts-ignore
     const { t, i18n } = useTranslation();
+
+    const images = import.meta.glob("./images/*.{png,jpg,jpeg,webp,gif}", {
+        eager: true,
+    });
+
+
+    const sources = Object.values(images).map((mod: any) => mod.default);
+
     return (
         <>
             <Navigation />
@@ -53,6 +60,12 @@ export default function Portfolio() {
                     <iframe frameborder="0" src="https://itch.io/embed/4040321?linkback=true&amp;border_width=0&amp;bg_color=000000&amp;fg_color=f7f7f7&amp;link_color=2a50ff&amp;border_color=000000" width="550" height="165">
                         <a href="https://egorzuyev.itch.io/highway-run-prototype">Highway Run (Prototype) by EgorZuyev</a>
                     </iframe>
+                </article>
+                <article className="gallery">
+                    <p>Gallery</p>
+                    {sources.map((src, i) => (
+                        <img key={i} src={src} alt="" />
+                    ))}
                 </article>
             </main>
         </>

@@ -23,25 +23,25 @@ export default function Navigation() {
 
     return (
         <nav>
-            <Link to={'/biography-page'}>
+            <Link to={'/biography-page/main'}>
                 <button>{t("home")}</button>
             </Link>
-            <Link to={'/o-mne'}>
+            <Link to={'/biography-page/o-mne'}>
                 <button>{t("about")}</button>
             </Link>
-            <Link to={ '/vzdelani' }>
+            <Link to={ '/biography-page/vzdelani' }>
                 <button>{t("schools")}</button>
             </Link>
-            <Link to={'/certifikaty-a-kurzy'}>
+            <Link to={'/biography-page/certifikaty-a-kurzy'}>
                 <button>{t("certs")}</button>
             </Link>
-            <Link to={"/zkusenosti"}>
+            <Link to={"/biography-page/zkusenosti"}>
                 <button>{t("experience")}</button>
             </Link>
-            <Link to={"/portfolio"}>
+            <Link to={"/biography-page/portfolio"}>
                 <button>{ t("portfolio") }</button>
             </Link>
-            <Link to={"/kontakt"}>
+            <Link to={"/biography-page/kontakt"}>
                 <button>{t("contact")}</button>
             </Link>
             <LangSelect/>

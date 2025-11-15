@@ -72,3 +72,16 @@ article {
     border-radius: 8px;
     border: 0px solid transparent;
 }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
