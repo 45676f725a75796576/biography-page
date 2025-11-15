@@ -13,7 +13,7 @@ import Kontakt from './Kontakt.tsx'
 import i18n from './i18n.ts'
 
 const router = createBrowserRouter([
-    { path: 'biography-page/', element: <App /> },
+    { path: 'biography-page', element: <App /> },
     { path: 'o-mne', element: <Omne /> },
     { path: 'vzdelani', element: <Vzdelani /> },
     { path: 'certifikaty-a-kurzy', element: <CertifikatyAKurzy /> },

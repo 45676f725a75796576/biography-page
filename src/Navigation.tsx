@@ -23,7 +23,7 @@ export default function Navigation() {
 
     return (
         <nav>
-            <Link to={'/'}>
+            <Link to={'/biography-page'}>
                 <button>{t("home")}</button>
             </Link>
             <Link to={'/o-mne'}>

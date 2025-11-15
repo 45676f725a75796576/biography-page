@@ -27,7 +27,9 @@ export default function Portfolio() {
                     <h2>{t('rac_game')}</h2>
                     <h3>Old school racing</h3>
                     <p>{t('rac_about')}</p>
-                    <a href="https://egorzuyev.itch.io/oldschoolracing">{t('game_url')}</a>
+                    <iframe frameborder="0" src="https://itch.io/embed/1776363?border_width=0&amp;bg_color=000000&amp;fg_color=ffffff&amp;link_color=5bc5fa&amp;border_color=000000" width="550" height="165">
+                        <a href="https://egorzuyev.itch.io/oldschoolracing">OldSchoolRacing by EgorZuyev</a>
+                    </iframe>
                 </article>
                 <article>
                     <h2>{t('hor_game')}</h2>
@@ -46,6 +48,11 @@ export default function Portfolio() {
                 <article>
                     <h2>{ t("rpg") }</h2>
                     <a href="https://github.com/45676f725a75796576/RPG2Dgame">{t("git_url")}</a>
+                </article>
+                <article>
+                    <iframe frameborder="0" src="https://itch.io/embed/4040321?linkback=true&amp;border_width=0&amp;bg_color=000000&amp;fg_color=f7f7f7&amp;link_color=2a50ff&amp;border_color=000000" width="550" height="165">
+                        <a href="https://egorzuyev.itch.io/highway-run-prototype">Highway Run (Prototype) by EgorZuyev</a>
+                    </iframe>
                 </article>
             </main>
         </>
