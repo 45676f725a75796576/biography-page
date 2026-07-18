@@ -24,8 +24,16 @@ export default function CertifikatyAKurzy() {
             <Navigation />
             <main>
                 <article>
-                    <h2>JavaScript essentials 1</h2>
+                    <h2>JavaScript Essentials 1</h2>
                     <img src="src/certifikat_js1.jpg" alt="JavaScript Essentials 1 certificate" width="500px" />
+                </article>
+                <article>
+                    <h2>CCNA 1 - Introduction to Networks</h2>
+                    <img src="src/ccna1.jpg" alt="CCNA 1 - Introduction to networking certificate" width="500px" />
+                </article>
+                <article>
+                    <h2>CCNA 2 - Switching, Routing and Wireless Essentials</h2>
+                    <img src="src/ccna2.jpg" alt="CCNA 2 - Switching, Routing and Wireless Essentials certificate" width="500px" />
                 </article>
             </main>
         </>
